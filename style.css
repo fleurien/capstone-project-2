@@ -1,0 +1,713 @@
+/* ****************
+
+  GENERAL STYLES
+
+**************** */
+
+body {
+  margin: 0;
+  font-family: "Gabarito", sans-serif;
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+  text-transform: uppercase;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 60pt !important;
+  top: 200px;
+  right: 10px;
+  margin-bottom: 0 !important;
+  line-height: 0.8 !important;
+  z-index: 2 !important;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 50pt !important;
+  line-height: 0.8 !important;
+  color: #4500fe !important;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 28pt !important;
+  color: #4500fe !important;
+  line-height: 0.8 !important;
+}
+
+h4 {
+  top: 50%;
+  line-height: 0.7 !important;
+  text-transform: uppercase;
+  font-size: 14pt !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: #4500fe !important;
+  font-weight: bold;
+  font-size: 16pt;
+  transition: color 0.4s ease-in-out;
+}
+
+a:hover {
+  color: #eb00ff !important;
+  transition: color 0.4s ease-in-out;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Removed scrollbar styling for now
+
+::-webkit-scrollbar-track {
+  background-color: #0c0032;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4500fe;
+}
+
+*/
+
+/* ****************
+
+  HOME PAGE
+
+**************** */
+
+#home {
+  color: #f9f8f8;
+  text-align: right;
+  height: 100vh;
+  position: relative;
+  background-color: black;
+  background-image: linear-gradient(
+      0deg,
+      transparent 24%,
+      #0c0032 25%,
+      #0c0032 30%,
+      transparent 27%,
+      transparent
+    ),
+    linear-gradient(
+      90deg,
+      transparent 24%,
+      #0c0032 25%,
+      #0c0032 30%,
+      transparent 27%,
+      transparent
+    );
+  background-size: 50px 50px;
+}
+
+#home .container {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  width: 50vw !important;
+  height: 50vw !important;
+}
+
+#home h4 {
+  text-transform: lowercase;
+  position: relative;
+  right: 15px;
+  bottom: -270px;
+}
+
+.btn-primary {
+  font-family: "Archivo Black", sans-serif !important;
+  font-size: 20pt !important;
+  text-transform: uppercase !important;
+  background-color: #4500fe !important;
+  color: #f9f8f8 !important;
+  padding: 10px 20px 10px 20px !important;
+  border-radius: 30px !important;
+  position: absolute;
+  bottom: 140px;
+  right: 140px;
+  border: 3px #4500fe solid !important;
+  --bs-btn-border-color: none !important;
+  z-index: 10;
+}
+
+.btn-primary:hover {
+  border: 3px #eb00ff solid !important;
+  color: #f9f8f8 !important;
+  background-color: #4500fe !important;
+}
+
+/* OLD SHAPES
+
+.circle {
+  background-color: #4500fe;
+  border-radius: 50%;
+  width: 60%;
+  height: 60% !important;
+  margin-left: 10vw;
+  bottom: 10vh;
+  position: absolute;
+  z-index: 3;
+}
+
+.home-image {
+  width: 90%;
+  position: absolute;
+  left: 20vw;
+  bottom: 5vh;
+  z-index: 3;
+}
+
+.home-wavy {
+  position: absolute;
+  left: 5vw;
+  width: 55%;
+  z-index: 5;
+}
+
+.wave1 {
+  bottom: 50vh;
+}
+
+.wave2 {
+  bottom: 46vh;
+}
+
+.wave3 {
+  bottom: 42vh;
+}
+
+.wave4 {
+  bottom: 38vh;
+}
+
+*/
+
+#home img {
+  position: absolute;
+  left: 5vw;
+  width: 50vw;
+  bottom: -5vh;
+}
+
+.left {
+  position: absolute;
+  left: 10vw;
+  bottom: 25vh;
+}
+
+.left .row {
+  width: 50vw;
+}
+
+/* ****************
+
+  INTRO PAGE
+
+**************** */
+
+#intro {
+  height: 100vh;
+  background-color: #f9f8f8;
+  color: black;
+  position: relative;
+}
+
+#intro .container {
+  position: relative;
+  width: 40vw;
+  padding-top: 20%;
+  margin-left: 50%;
+  z-index: 10;
+}
+
+#intro .circle-sm {
+  position: relative;
+  left: -50;
+  bottom: 0;
+  z-index: 10;
+}
+
+/* ****************
+
+  EXPERIENCE PAGE
+
+**************** */
+
+#experience {
+  position: relative;
+  height: 100vh;
+  background-color: black;
+  color: #f9f8f8;
+  overflow: hidden;
+  z-index: 10;
+}
+
+#experience .container {
+  width: 70vw;
+  margin-left: 30vw;
+  padding-top: 20vh;
+  text-align: justify;
+  position: relative;
+}
+
+#experience .first {
+  width: 600px;
+  position: sticky;
+  bottom: -100px;
+  left: -100px;
+  z-index: 1;
+}
+
+#experience .second {
+  width: 300px;
+  position: absolute;
+  rotate: 83deg;
+  top: -200px;
+  right: -400px;
+  z-index: 1;
+}
+
+#experience h3 {
+  position: relative;
+  z-index: 2;
+}
+
+#experience .circle-sm {
+  position: relative;
+  left: 45vw;
+  top: -35vh;
+}
+
+.circle-sm {
+  background-color: #4500fe;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  position: absolute;
+}
+
+/* ****************
+
+  SKILLS PAGE
+
+**************** */
+
+#skills {
+  height: 100vh;
+  background-color: #f9f8f8;
+  color: black;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+
+#skills h2 {
+  position: absolute;
+  bottom: 10vh;
+  left: 5vw;
+}
+
+#skills .col {
+  position: absolute;
+  left: 55vw;
+  bottom: 30vh;
+  width: 30vw;
+  text-align: justify;
+}
+
+#skills .circle-sm {
+  position: relative;
+  left: -100px;
+  bottom: -300px;
+}
+
+#skills img {
+  width: 500px;
+  top: 100px;
+  left: 50px;
+  position: absolute;
+}
+
+.skills2 {
+  position: absolute;
+  bottom: -100px;
+  max-height: 300px;
+  rotate: -13deg;
+  right: -600px;
+}
+
+/* ****************
+
+  PROJECTS PAGE
+
+**************** */
+
+#projects {
+  height: 100vh;
+  background-color: black;
+  color: #f9f8f8;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+
+#projects .container {
+  text-align: justify;
+  width: 100vw;
+  height: 100vh;
+  position: relative !important;
+}
+
+#projects .left {
+  position: absolute !important;
+  width: 50vw !important;
+  left: 5vw;
+  bottom: 100px;
+  z-index: 10;
+}
+
+#projects .right {
+  position: absolute !important;
+  width: 35vw !important;
+  right: 5vw;
+  top: 20vh;
+  margin-right: 5vw;
+}
+
+#projects h4 {
+  color: #4500fe;
+}
+
+#projects a {
+  font-size: var(--bs-body-font-size);
+  font-weight: 400;
+}
+
+#projects .circle-sm {
+  position: relative;
+  left: -100px;
+  bottom: 200px;
+  z-index: 10;
+}
+
+#projects .first {
+  width: 600px;
+  position: absolute;
+  top: -150px;
+  left: -200px;
+}
+
+#projects .second {
+  position: absolute;
+  right: -30px;
+  bottom: -50px;
+}
+
+/* ****************
+
+  CONTACT PAGE
+
+**************** */
+
+/* TODO: make the images responsive */
+
+#contact {
+  height: 100vh;
+  background-color: #f9f8f8;
+  color: black;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+
+#contact h2 {
+  position: absolute;
+  top: 12vh;
+  right: 10px;
+  font-size: 48pt !important;
+  z-index: 10;
+}
+
+#contact h5 {
+  font-size: 12pt;
+}
+
+#contact p {
+  font-size: 9pt;
+}
+
+#contact a {
+  font-size: 9pt !important;
+}
+
+#contact .circle-sm {
+  position: relative;
+  top: 230px;
+  left: 50px;
+}
+
+#contact .container {
+  position: relative;
+}
+
+#contact .table1 {
+  position: absolute;
+  width: 40vw;
+  bottom: -700px;
+  left: 0;
+  text-align: justify;
+}
+
+.cuteyear {
+  position: relative;
+}
+
+.year1 {
+  position: absolute !important;
+  top: 13px !important;
+  left: -17px !important;
+}
+
+.year2 {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  color: #f9f8f8 !important;
+  -webkit-text-stroke: 1px #4500fe;
+}
+
+.contact1 {
+  width: 400px;
+  position: absolute;
+  left: -50px;
+  top: -50px;
+}
+
+.contact2 {
+  position: absolute;
+  width: 800px;
+  bottom: -100px;
+  right: -30px;
+}
+
+/* ****************
+
+  MEDIA QUERIES
+
+**************** */
+
+@media (max-width: 1400px) {
+  #experience p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #contact .contact2 {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 1114px) {
+  #experience .first {
+    width: 70%;
+  }
+
+  #experience .container {
+    width: 80vw;
+    margin-left: 10vw;
+  }
+
+  #experience .circle-sm {
+    display: none;
+  }
+
+  #experience .first {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  #home h1 {
+    line-height: 1.1 !important;
+  }
+
+  #home h4 {
+    bottom: -370px;
+  }
+  #home img {
+    bottom: 10vh;
+  }
+
+  #skills .circle-sm {
+    bottom: -600px;
+  }
+
+  #skills img {
+    width: 50%;
+  }
+
+  #skills h2 {
+    font-size: 48px !important;
+    bottom: 5vh;
+  }
+
+  #skills .col {
+    left: 10vw;
+    bottom: 20vh;
+    width: 80vw;
+  }
+
+  #skills p {
+    font-size: 14px !important;
+  }
+
+  #contact h2 {
+    font-size: 48px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #home .btn {
+    position: absolute;
+    right: 10vw;
+    bottom: 5vh;
+  }
+
+  #experience .circle-sm {
+    top: -60vh;
+  }
+
+  #experience p {
+    margin-left: 15px;
+    font-size: 14px !important;
+  }
+
+  #experience h3 {
+    font-size: 26px !important;
+  }
+
+  #projects .right {
+    top: 10vh;
+    right: -5vw;
+  }
+
+  #projects .left {
+    bottom: 5vh;
+  }
+
+  #contact h2 {
+    font-size: 36px !important;
+    width: 60vw;
+    text-align: right;
+  }
+}
+
+@media (max-width: 576px) {
+  #home .btn {
+    position: absolute;
+  }
+
+  #home img {
+    width: 70vw;
+    bottom: 20vh;
+  }
+
+  #home h1 {
+    font-size: 50px !important;
+  }
+
+  #home h4 {
+    bottom: -320px;
+  }
+
+  #intro h2 {
+    font-size: 36px !important;
+  }
+
+  #intro p {
+    font-size: 14px !important;
+  }
+
+  #experience .circle-sm {
+    top: -75vh;
+  }
+
+  #projects .first {
+    display: none;
+  }
+
+  #projects .second {
+    display: none;
+  }
+
+  #projects h2 {
+    font-size: 36px !important;
+  }
+
+  #projects .right {
+    right: 5vw;
+    top: 5vh;
+  }
+
+  #projects p {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 475px) {
+  #home img {
+    display: none;
+  }
+
+  #intro .container {
+    width: 80vw;
+    bottom: -30vh;
+    left: -40vw;
+  }
+
+  #experience h2 {
+    font-size: 36px !important;
+  }
+
+  .circle-sm {
+    display: none;
+  }
+
+  .first {
+    display: none;
+  }
+
+  .second {
+    display: none;
+  }
+
+  #experience .container {
+    width: 90vw;
+    margin-left: 3vw;
+    margin-top: -10vh;
+  }
+
+  #experience h3 {
+    font-size: 18px !important;
+  }
+
+  #experience a {
+    font-size: 14px !important;
+  }
+
+  #contact .contact1 {
+    display: none;
+  }
+
+  #contact .contact2 {
+    display: none;
+  }
+}
